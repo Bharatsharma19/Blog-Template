@@ -1,0 +1,59 @@
+:root {
+    --main-bg-color: blue;
+}
+
+.max-width-1 {
+    max-width: 92vw;
+}
+
+.max-width-2 {
+    max-width: 84vw;
+}
+
+.max-width-3 {
+    max-width: 88vw;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.my-2 {
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.btn {
+    padding: 4px 9px;
+    border: 2px solid;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: white;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+    color: white;
+    background-color: var(--main-bg-color);
+}
+
+.form-input {
+    padding: 4px 6px;
+    font-size: 18px;
+    border: 2px solid antiquewhite;
+    border-radius: 8px;
+    margin: 0 12px;
+}
+
+.form-box input,
+textarea {
+    width: 52vw;
+    padding: 0px 6px;
+    margin: 7px 0;
+    font-size: 18px;
+    font-family: var(--font1);
+    border: 2px solid var(--main-bg-color);
+    border-radius: 5px;
+}

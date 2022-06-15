@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&family=Source+Sans+Pro:wght@700&family=Ubuntu:wght@300&display=swap');
+
+* {
+    font-family: 'Open Sans', 'Roboto', 'Source Sans Pro', 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    margin-top: 24px;
+    height: 72px;
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    font-size: 32px;
+    display: flex;
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0 64px;
+    font-size: 24px;
+}
+
+.nav-left ul li {
+    list-style: none;
+    margin: 0 16px;
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-left ul li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-left ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-right {
+    font-size: 16px;
+}
+
+.content {
+    height: 288px;
+    /*background-color: rgb(227, 253, 254);*/
+    display: flex;
+    margin-top: 24px;
+    padding: 12px;
+    position: relative;
+}
+
+.content::after {
+    content: "";
+    background-image: url('../img/11.svg');
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.16;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-left {
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-right img {
+    height: 256px;
+    border: 2px solid black;
+    border-radius: 512px;
+    padding: 4px;
+}
+
+.home-articles {
+    /*height: 464px;*/
+    /*background-color: rgb(220, 255, 252);*/
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.home-article {
+    display: flex;
+    margin: 24px;
+}
+
+.home-article-content {
+    align-self: center;
+    padding: 0px 24px;
+}
+
+.home-article-content a{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 12px;
+}
+
+.home-article-content a:hover{
+    text-decoration: underline;
+    color: blue;
+    font-size: 24px;
+}
+
+.home-article img {
+    width: 256px;
+}
+
+.footer {
+    height: 32px;
+    /*background-color: blueviolet;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bolder;
+    font-size: 24px;
+    padding: 16px;
+}
